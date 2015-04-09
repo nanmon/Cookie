@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/buildings_height"
+    android:background="@drawable/abc_cab_background_top_mtrl_alpha">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_farm"
+        android:id="@+id/building_image"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/favicon"
+        android:layout_toRightOf="@id/building_image"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="@dimen/general_padding"
+        android:id="@+id/favicon"/>
+
+    <TextView android:id="@+id/building_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/building_image"
+        android:maxLines="1"
+        android:textSize="@dimen/abc_text_size_large_material"
+        android:paddingTop="@dimen/general_padding"/>
+
+    <TextView android:id="@+id/building_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="500"
+        android:paddingRight="@dimen/general_padding"
+        android:paddingEnd="@dimen/general_padding"
+        android:paddingBottom="@dimen/general_padding"
+        android:layout_toRightOf="@id/favicon"
+        android:layout_alignParentBottom="true"/>
+
+    <TextView android:id="@+id/building_n"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/abc_text_size_large_material"
+        android:text="0"
+        android:paddingRight="@dimen/general_padding"
+        android:paddingEnd="@dimen/general_padding"
+        android:paddingBottom="@dimen/general_padding"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

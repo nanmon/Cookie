@@ -1,0 +1,190 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/all_time_cookies"/>
+
+    <TextView android:id="@+id/alltime_cookies_label" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/stats_margin"
+        android:textSize="@dimen/stats_size"
+        android:text="0 cookies"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/spent_cookies"/>
+
+    <TextView android:id="@+id/spent_cookies_label" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/stats_margin"
+        android:textSize="@dimen/stats_size"
+        android:text="0 cookies"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/profited_cookies"/>
+
+        <TextView android:id="@+id/profited_cookies_label" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/stats_margin"
+            android:textSize="@dimen/stats_size"
+            android:text="0 cookies"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/game_resets"/>
+
+        <TextView android:id="@+id/game_resets_label" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/stats_margin"
+            android:textSize="@dimen/stats_size"
+            android:text="0"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bakin_since"/>
+
+    <TextView android:id="@+id/bakin_since_label" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/stats_margin"
+        android:textSize="@dimen/stats_size"
+        android:text="Now"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/total_time"/>
+
+        <TextView android:id="@+id/total_time_label" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/stats_margin"
+            android:textSize="@dimen/stats_size"
+            android:text="Now"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cps_multi"/>
+
+        <TextView android:id="@+id/cps_multi_label" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/stats_margin"
+            android:textSize="@dimen/stats_size"
+            android:text="100.0 percent"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/buildings"/>
+
+    <TextView android:id="@+id/buildings_label" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/stats_margin"
+        android:textSize="@dimen/stats_size"
+        android:text="0"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cookie_clicks"/>
+
+    <TextView android:id="@+id/cookie_clicks_label" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/stats_margin"
+        android:textSize="@dimen/stats_size"
+        android:text="0 clicks"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/handmade"/>
+
+    <TextView android:id="@+id/handmade_label" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/stats_margin"
+        android:textSize="@dimen/stats_size"
+        android:text="0 cookies"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cookies_per_click"/>
+
+    <TextView android:id="@+id/cpc_label" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/stats_margin"
+        android:textSize="@dimen/stats_size"
+        android:text="0 cookies"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/golden_cookies"/>
+
+    <TextView android:id="@+id/goldclicks_label" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/stats_margin"
+        android:textSize="@dimen/stats_size"
+        android:text="0 clicked"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/version_string"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/stats_margin"
+        android:text="@string/version"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/heavenly_chips"/>
+
+        <TextView android:id="@+id/heavenly_chips_label" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/stats_margin"
+            android:textSize="@dimen/stats_size"
+            android:text="0 chips (+0% multiplier)"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/upgrades_bought"/>
+
+        <TextView android:id="@+id/upgrades_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/stats_margin"
+            android:text="0/112"/>
+
+    <GridView android:id="@+id/bought_upgrades"
+        android:layout_width="match_parent"
+        android:layout_height="390dp"
+        android:numColumns="auto_fit"
+        android:scrollbars="horizontal"
+        android:columnWidth="30dp"
+        android:choiceMode="singleChoice"/>
+
+    </LinearLayout>
+</ScrollView>

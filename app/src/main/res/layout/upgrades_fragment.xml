@@ -1,0 +1,249 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity$PlaceholderFragment"
+    android:orientation="vertical">
+
+    <!--<HorizontalScrollView-->
+        <!--android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+-->
+        <GridView android:id="@+id/upgrade_box"
+
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:numColumns="auto_fit"
+            android:columnWidth="30dp"
+            android:scrollbars="horizontal"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:choiceMode="singleChoice"/>
+
+    <!--</HorizontalScrollView>-->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+        <LinearLayout android:id="@+id/buildings_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/general_padding"
+            android:orientation="vertical">
+
+            <com.nancio.cookie.views.BuildingView
+                android:onClick="buildingClick"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/buildings_height"
+                custom:index="0"
+                custom:image="@drawable/ic_cursor"
+                custom:cps="+0.1 cps"
+                custom:name="@string/cursor"
+                custom:cost="15" />
+
+            <com.nancio.cookie.views.BuildingView
+                android:onClick="buildingClick"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/buildings_height"
+                custom:index="1"
+                custom:image="@drawable/ic_grandma"
+                custom:cps="+0.5 cps"
+                custom:name="@string/grandma"
+                custom:cost="100"/>
+
+            <com.nancio.cookie.views.BuildingView
+                android:onClick="buildingClick"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/buildings_height"
+                custom:index="2"
+                custom:image="@drawable/ic_farm"
+                custom:cps="+4 cps"
+                custom:name="@string/farm"
+                custom:cost="500"/>
+
+            <com.nancio.cookie.views.BuildingView
+                android:onClick="buildingClick"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/buildings_height"
+                custom:index="3"
+                custom:image="@drawable/ic_factory"
+                custom:cps="+10 cps"
+                custom:name="@string/factory"
+                custom:cost="3,000"/>
+
+            <com.nancio.cookie.views.BuildingView
+                android:onClick="buildingClick"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/buildings_height"
+                custom:index="4"
+                custom:image="@drawable/ic_mine"
+                custom:cps="+40 cps"
+                custom:name="@string/mine"
+                custom:cost="10,000"/>
+
+            <com.nancio.cookie.views.BuildingView
+                android:onClick="buildingClick"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/buildings_height"
+                custom:index="5"
+                custom:image="@drawable/ic_ship"
+                custom:cps="+100 cps"
+                custom:name="@string/ship"
+                custom:cost="40,000"/>
+
+            <com.nancio.cookie.views.BuildingView
+                android:onClick="buildingClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                custom:index="6"
+                custom:image="@drawable/ic_lab"
+                custom:cps="+400 cps"
+                custom:name="@string/lab"
+                custom:cost="200,000"/>
+
+            <com.nancio.cookie.views.BuildingView
+                android:onClick="buildingClick"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/buildings_height"
+                custom:index="7"
+                custom:image="@drawable/ic_portal"
+                custom:cps="+6,666 cps"
+                custom:name="@string/portal"
+                custom:cost="1.666e^6"/>
+
+            <com.nancio.cookie.views.BuildingView
+                android:onClick="buildingClick"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/buildings_height"
+                custom:index="8"
+                custom:image="@drawable/ic_time"
+                custom:cps="+98,765 cps"
+                custom:name="@string/time_machine"
+                custom:cost="123.456e^6"/>
+
+            <com.nancio.cookie.views.BuildingView
+                android:onClick="buildingClick"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/buildings_height"
+                custom:index="9"
+                custom:image="@drawable/ic_antimatter"
+                custom:cps="+999,999 cps"
+                custom:name="@string/antimatter"
+                custom:cost="3.999e^9"/>
+
+            <com.nancio.cookie.views.BuildingView
+                android:onClick="buildingClick"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/buildings_height"
+                custom:index="10"
+                custom:image="@drawable/ic_prism"
+                custom:cps="+10.000e^6 cps"
+                custom:name="@string/prism"
+                custom:cost="75.000e^9"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/checkout"
+        android:layout_width="fill_parent"
+        android:paddingTop="@dimen/general_padding"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_height="0dp"
+        android:background="#333333"
+        android:layout_weight="0">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:onClick="closeCheckout"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:clickable="true"/>
+
+        <ImageView
+            android:id="@+id/check_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_cursor"/>
+
+        <TextView
+            android:textColor="#fff"
+            android:id="@+id/check_title"
+            android:layout_toRightOf="@id/check_image"
+            android:paddingLeft="@dimen/general_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reinforced index finger"/>
+
+        <ImageView android:id="@+id/check_favicon"
+            android:layout_width="wrap_content"
+            android:paddingLeft="@dimen/general_padding"
+            android:layout_height="wrap_content"
+            android:src="@drawable/favicon"
+            android:layout_below="@id/check_title"
+            android:layout_toRightOf="@id/check_image"/>
+
+        <TextView android:id="@+id/check_cookies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/check_title"
+            android:layout_toRightOf="@id/check_favicon"
+            android:textColor="#fff"
+            android:text="100"/>
+
+        <TextView android:id="@+id/check_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/check_image"
+            android:textColor="#fff"
+            android:text="The mouse gains +1 cookie per click. Cursors gain +0.1 base Cps"/>
+
+        <TextView   android:id="@+id/check_quote"
+            android:textColor="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/check_description"
+            android:paddingBottom="@dimen/general_padding"
+            android:text="proud proud"
+            android:textStyle="italic"/>
+
+        <LinearLayout android:id="@+id/check_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#333"
+            android:layout_alignParentBottom="true">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="@drawable/button_background"
+                android:text="Buy"
+                android:gravity="center"
+                android:id="@+id/check_buy"
+                android:onClick="buy"
+                android:clickable="true"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textColor="#fff"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/check_sell"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+</LinearLayout>

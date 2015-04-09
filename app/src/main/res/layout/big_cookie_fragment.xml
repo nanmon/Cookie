@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity$PlaceholderFragment"
+    android:id="@+id/bigCookie_layout">
+
+    <ImageButton
+        android:layout_width="@dimen/big_cookie_size"
+        android:layout_height="@dimen/big_cookie_size"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:id="@+id/bigCookie"
+        android:onClick="bigClick"
+        android:alpha="1"
+        android:background="@drawable/big_cookie_button"/>
+
+    <ImageView android:id="@+id/golden_cookie_view"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/golden_cookie"
+        android:alpha="0"
+        android:onClick="goldenClick" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:alpha="0"
+        android:text="+1"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
+
+
+
+    <TextView android:id="@+id/golden_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:alpha="0"
+        android:gravity="center" />
+
+</RelativeLayout>
